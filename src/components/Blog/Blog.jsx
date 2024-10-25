@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { CiBookmark } from "react-icons/ci";
 
-const Blog = ({blog}) => {
+const Blog = ({blog, handleAddToBookMark}) => {
 const {title, cover_image, author_img, author,posted_date, reading_time, hashtags}= blog
 
     return (
-        <div className='p-4 bg-base-200 border-2 rounded-xl mb-3'>
+        <div className='p-5 border-b-2 mb-3 mt-8'>
             <img className='mb-3 rounded-xl' src={cover_image} alt={`Cover image of the title ${cover_image}`} />
             <div className='flex justify-between'>
                 <div className='flex gap-2'>
@@ -17,8 +18,9 @@ const {title, cover_image, author_img, author,posted_date, reading_time, hashtag
                     <p>{posted_date}</p>
                     </div>
                 </div>
-                <div>
+                <div className='flex items-center gap-1'>
                     <p>{reading_time} min read</p>
+<button onClick={()=>handleAddToBookMark(blog)}><CiBookmark></CiBookmark></button>
                 </div>
             </div>
             <h2 className='text-xl font-semibold mt-4 mb-2'>{title}</h2>
@@ -34,6 +36,7 @@ const {title, cover_image, author_img, author,posted_date, reading_time, hashtag
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleAddToBookMark: PropTypes.func.isRequired
 }
 export default Blog;
