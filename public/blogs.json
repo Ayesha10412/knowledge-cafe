@@ -5,8 +5,8 @@
         "author": "John Doe",
         "title": "Exploring the Future of AI",
         "author_img": "https://i.ibb.co.com/6rP9GRV/boy1.png",
-        "posted_date":  "Oct 20 (5 days ago)",
-        "reading_time":8,
+        "posted_date": "Oct 20 (5 days ago)",
+        "reading_time": 8,
         "hashtags": ["#AI", "#Technology", "#Future", "#MachineLearning"]
     },
     {
@@ -46,7 +46,7 @@
         "title": "Mastering the Art of Public Speaking",
         "author_img": "https://i.ibb.co.com/0mZg68J/brunette-girl-with-curly-hair-looks-confused-sitting-front-laptop-yellow-case.jpg",
         "posted_date": "Oct 15 (10 days ago)",
-        "reading_time":6,
+        "reading_time": 6,
         "hashtags": ["#PublicSpeaking", "#Communication", "#SkillDevelopment", "#Confidence"]
     }
 ]
